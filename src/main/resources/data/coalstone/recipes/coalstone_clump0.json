@@ -1,0 +1,24 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"pattern" :
+	[
+		"xa",
+		"ax"
+	],
+	"key" :
+	{
+		"x" :
+		{
+			"item" : "minecraft:cobblestone" 
+		},
+		"a" :
+		{
+			"item" : "minecraft:coal"
+		}
+	},
+	"result" :
+	{
+		"item" : "coalstone:coalstone_clump",
+		"count" : 2
+	}
+}

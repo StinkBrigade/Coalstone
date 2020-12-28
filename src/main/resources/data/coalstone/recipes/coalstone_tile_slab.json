@@ -1,0 +1,19 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"pattern" :
+	[
+		"aaa"
+	],
+	"key" :
+	{
+		"a" :
+		{
+			"item" : "coalstone:coalstone_tiles"
+		}
+	},
+	"result" :
+	{
+		"item" : "coalstone:coalstone_tile_slab",
+		"count" : 6
+	}
+}

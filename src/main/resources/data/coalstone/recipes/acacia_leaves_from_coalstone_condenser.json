@@ -1,0 +1,18 @@
+{
+	"type" : "coalstone:coalstone_condenser_recipe",
+	"pattern" : "aaaaa",
+	"key" :
+	{
+		"a" :
+		{
+			"item" : "minecraft:acacia_sapling" 
+		}
+	},
+	"output" :
+	{
+		"item" : "minecraft:acacia_leaves",
+		"count" : 2
+	},
+	"experience" : 0.1,
+	"cookingtime" : 100
+}

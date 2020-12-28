@@ -1,0 +1,43 @@
+{
+	"variants" :
+	{
+		"facing=east,lit=false" :
+		{
+			"model" : "coalstone:block/coalstone_condenser",
+			"y": 90
+		},
+		"facing=east,lit=true" :
+		{
+			"model" : "coalstone:block/coalstone_condenser_on",
+			"y": 90
+		},
+		"facing=north,lit=false" :
+		{
+			"model" : "coalstone:block/coalstone_condenser"
+		},
+		"facing=north,lit=true" :
+		{
+			"model" : "coalstone:block/coalstone_condenser_on"
+		},
+		"facing=south,lit=false" :
+		{
+			"model" : "coalstone:block/coalstone_condenser",
+			"y": 180
+		},
+		"facing=south,lit=true" :
+		{
+			"model" : "coalstone:block/coalstone_condenser_on",
+			"y": 180
+		},
+		"facing=west,lit=false" :
+		{
+			"model" : "coalstone:block/coalstone_condenser",
+			"y": 270
+		},
+		"facing=west,lit=true" :
+		{
+			"model" : "coalstone:block/coalstone_condenser_on",
+			"y": 270
+		}
+	}
+}

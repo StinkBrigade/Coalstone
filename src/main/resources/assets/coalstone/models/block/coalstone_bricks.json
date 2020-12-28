@@ -1,0 +1,7 @@
+{
+	"parent" : "block/cube_all",
+	"textures" :
+	{
+		"all" : "coalstone:block/coalstone_bricks"
+	}
+}

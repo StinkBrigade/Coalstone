@@ -1,0 +1,26 @@
+{
+	"type" : "coalstone:coalstone_condenser_recipe",
+	"pattern" : "aaxab",
+	"key" :
+	{
+		"a" :
+		{
+			"item" : "coalstone:condensed_coalstone" 
+		},
+		"b" :
+		{
+			"item" : "minecraft:iron_ingot" 
+		},
+		"x" :
+		{
+			"item" : "minecraft:diamond_hoe"
+		}
+	},
+	"output" :
+	{
+		"item" : "coalstone:carbonised_diamond_hoe",
+		"count" : 1
+	},
+	"experience" : 0.5,
+	"cookingtime" : 400
+}

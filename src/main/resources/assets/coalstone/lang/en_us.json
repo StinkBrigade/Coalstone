@@ -1,0 +1,30 @@
+{
+	"item.coalstone.coalstone_clump" : "Coalstone Clump",
+	"item.coalstone.coalstone_shard" : "Coalstone Shard",
+	"item.coalstone.condensed_coalstone" : "Condensed Coalstone",
+	
+	"item.coalstone.coalstone_sword" : "Coalstone Sword",
+	"item.coalstone.coalstone_shovel" : "Coalstone Shovel",
+	"item.coalstone.coalstone_pickaxe" : "Coalstone Pickaxe",
+	"item.coalstone.coalstone_axe" : "Coalstone Axe",
+	"item.coalstone.coalstone_hoe" : "Coalstone Hoe",
+	
+	"item.coalstone.carbonised_diamond_sword" : "Carbonised Diamond Sword",
+	"item.coalstone.carbonised_diamond_shovel" : "Carbonised Diamond Shovel",
+	"item.coalstone.carbonised_diamond_pickaxe" : "Carbonised Diamond Pickaxe",
+	"item.coalstone.carbonised_diamond_axe" : "Carbonised Diamond Axe",
+	"item.coalstone.carbonised_diamond_hoe" : "Carbonised Diamond Hoe",
+	
+	"block.coalstone.coalstone_bricks" : "Coalstone Bricks",
+	"block.coalstone.coalstone_brick_stairs" : "Coalstone Brick Stairs",
+	"block.coalstone.coalstone_brick_slab" : "Coalstone Brick Slab",
+	"block.coalstone.coalstone_tiles" : "Coalstone Tiles",
+	"block.coalstone.coalstone_tile_stairs" : "Coalstone Tile Stairs",
+	"block.coalstone.coalstone_tile_slab" : "Coalstone Tile Slab",
+	
+	"block.coalstone.coalstone_furnace" : "Coalstone Furnace",
+	"block.coalstone.coalstone_condenser" : "Coalstone Condenser",
+	
+	"container.coalstone.coalstone_furnace" : "Coalstone Furnace",
+	"container.coalstone.coalstone_condenser" : "Coalstone Condenser"
+}

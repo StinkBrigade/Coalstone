@@ -1,0 +1,9 @@
+{
+	"parent" : "block/orientable",
+	"textures" :
+	{
+		"top" : "coalstone:block/coalstone_furnace_top",
+		"front" : "coalstone:block/coalstone_furnace_front",
+		"side" : "coalstone:block/coalstone_furnace_side"
+	}
+}

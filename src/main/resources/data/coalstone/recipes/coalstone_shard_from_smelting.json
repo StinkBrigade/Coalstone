@@ -1,0 +1,10 @@
+{
+	"type" : "minecraft:smelting",
+	"ingredient" :
+	{
+		"item" : "coalstone:coalstone_clump"
+	},
+	"result" : "coalstone:coalstone_shard",
+	"experience" : 0.3,
+	"cookingtime" : 200
+}

@@ -1,0 +1,18 @@
+{
+	"type" : "coalstone:coalstone_condenser_recipe",
+	"pattern" : "aaaaa",
+	"key" :
+	{
+		"a" :
+		{
+			"item" : "minecraft:jungle_sapling" 
+		}
+	},
+	"output" :
+	{
+		"item" : "minecraft:jungle_leaves",
+		"count" : 2
+	},
+	"experience" : 0.1,
+	"cookingtime" : 100
+}

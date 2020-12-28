@@ -1,0 +1,6 @@
+{
+	"variants" :
+	{
+		"" : { "model" : "coalstone:block/coalstone_tiles" }
+	}
+}

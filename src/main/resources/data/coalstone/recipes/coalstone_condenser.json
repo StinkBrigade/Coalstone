@@ -1,0 +1,34 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"pattern" :
+	[
+		"aba",
+		"xyx",
+		"aaa"
+	],
+	"key" :
+	{
+		"a" :
+		[
+			{ "item" : "coalstone:coalstone_bricks" },
+			{ "item" : "coalstone:coalstone_tiles" }
+		],
+		"b" :
+		{
+			"item" : "minecraft:lava_bucket"
+		},
+		"x" :
+		{
+			"item" : "minecraft:iron_ingot"
+		},
+		"y" :
+		{
+			"item" : "coalstone:coalstone_furnace"
+		}
+	},
+	"result" :
+	{
+		"item" : "coalstone:coalstone_condenser",
+		"count" : 1
+	}
+}

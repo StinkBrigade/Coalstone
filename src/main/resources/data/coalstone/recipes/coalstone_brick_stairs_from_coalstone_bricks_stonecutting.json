@@ -1,0 +1,9 @@
+{
+	"type" : "minecraft:stonecutting",
+  	"ingredient" :
+	{
+    	"item" : "coalstone:coalstone_bricks"
+  	},
+  	"result" : "coalstone:coalstone_brick_stairs",
+  	"count" : 1
+}

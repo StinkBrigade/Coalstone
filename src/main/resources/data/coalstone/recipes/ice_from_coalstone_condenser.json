@@ -1,0 +1,22 @@
+{
+	"type" : "coalstone:coalstone_condenser_recipe",
+	"pattern" : "aaxaa",
+	"key" :
+	{
+		"a" :
+		{
+			"item" : "minecraft:snow_block" 
+		},
+		"x" :
+		{
+			"item" : "minecraft:water_bucket"
+		}
+	},
+	"output" :
+	{
+		"item" : "minecraft:ice",
+		"count" : 4
+	},
+	"experience" : 0.2,
+	"cookingtime" : 200
+}

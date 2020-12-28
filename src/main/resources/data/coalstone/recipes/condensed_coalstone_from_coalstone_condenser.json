@@ -1,0 +1,19 @@
+{
+	"type" : "coalstone:coalstone_condenser_recipe",
+	"pattern" : "aa aa",
+	"key" :
+	{
+		"a" :
+		[
+			{ "item" : "coalstone:coalstone_bricks" },
+			{ "item" : "coalstone:coalstone_tiles" }
+		]
+	},
+	"output" :
+	{
+		"item" : "coalstone:condensed_coalstone",
+		"count" : 1
+	},
+	"experience" : 0.4,
+	"cookingtime" : 400
+}

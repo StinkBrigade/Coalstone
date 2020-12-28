@@ -1,0 +1,18 @@
+{
+	"type" : "coalstone:coalstone_condenser_recipe",
+	"pattern" : "aa aa",
+	"key" :
+	{
+		"a" :
+		{
+			"item" : "minecraft:snowball" 
+		}
+	},
+	"output" :
+	{
+		"item" : "minecraft:snow_block",
+		"count" : 4
+	},
+	"experience" : 0.1,
+	"cookingtime" : 100
+}

@@ -1,0 +1,26 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"pattern" :
+	[
+		" a ",
+		"axa",
+		" a "
+	],
+	"key" :
+	{
+		"a" :
+		[
+			{ "item" : "coalstone:coalstone_bricks" },
+			{ "item" : "coalstone:coalstone_tiles" }
+		],
+		"x" :
+		{
+			"item" : "minecraft:furnace"
+		}
+	},
+	"result" :
+	{
+		"item" : "coalstone:coalstone_furnace",
+		"count" : 1
+	}
+}

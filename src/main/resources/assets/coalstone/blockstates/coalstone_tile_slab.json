@@ -1,0 +1,17 @@
+{
+	"variants" :
+	{
+		"type=bottom" :
+		{
+			"model" : "coalstone:block/coalstone_tile_slab"
+		},
+		"type=double" :
+		{
+			"model" : "coalstone:block/coalstone_tiles"
+		},
+		"type=top" :
+		{
+			"model" : "coalstone:block/coalstone_tile_slab_top"
+		}
+	}
+}

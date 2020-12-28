@@ -1,0 +1,18 @@
+{
+	"type" : "coalstone:coalstone_condenser_recipe",
+	"pattern" : "aa aa",
+	"key" :
+	{
+		"a" :
+		{
+			"item" : "minecraft:gravel" 
+		}
+	},
+	"output" :
+	{
+		"item" : "minecraft:cobblestone",
+		"count" : 4
+	},
+	"experience" : 0.2,
+	"cookingtime" : 200
+}

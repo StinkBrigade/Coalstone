@@ -1,0 +1,9 @@
+{
+	"parent" : "block/orientable",
+	"textures" :
+	{
+		"top" : "coalstone:block/coalstone_condenser_top",
+		"front" : "coalstone:block/coalstone_condenser_front_on",
+		"side" : "coalstone:block/coalstone_condenser_side"
+	}
+}
