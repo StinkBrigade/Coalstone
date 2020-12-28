@@ -42,5 +42,6 @@ public class Coalstone
         
         // TODO: JEI Support (27/12/2020: Tried to implement, Maven was being an asshole though. Need to try again soon.)
         // TODO: Condenser recipes reset when changing item stack sizes
+        // TODO: Fix weird bug where /src/main/resources/kimera/... .CLASS files aren't updating to their /bin/kimera/... counterparts.
     }
 }
