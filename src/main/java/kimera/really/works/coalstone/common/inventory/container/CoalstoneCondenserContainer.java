@@ -173,11 +173,9 @@ public class CoalstoneCondenserContainer extends Container
 	@Override
 	public ItemStack transferStackInSlot(PlayerEntity playerEntity, int sourceSlotIndex)
 	{
-		Coalstone.LOGGER.log(Level.DEBUG, "Shift Click Condenser");
 		Slot sourceSlot = this.inventorySlots.get(sourceSlotIndex);
 		if(sourceSlot != null && sourceSlot.getHasStack())
 		{
-			Coalstone.LOGGER.log(Level.DEBUG, "Source Slot " + sourceSlot + " valid.");
 			ItemStack sourceItemStack = sourceSlot.getStack();
 			ItemStack sourceItemStackBeforeMerge = sourceItemStack.copy();
 			boolean transferSuccessful = false;
@@ -216,7 +214,6 @@ public class CoalstoneCondenserContainer extends Container
 					{
 						transferSuccessful = this.mergeInto(SlotZone.INPUT, sourceItemStack, false);
 					}
-					Coalstone.LOGGER.log(Level.DEBUG, "Player Inventory Transfer " + (transferSuccessful ? "Successful" : "Unsuccessful"));
 					if(!transferSuccessful)
 					{
 						if(sourceZone == SlotZone.PLAYER_HOTBAR)
