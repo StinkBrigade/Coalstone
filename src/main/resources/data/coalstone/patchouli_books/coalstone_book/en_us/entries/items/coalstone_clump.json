@@ -1,0 +1,25 @@
+{
+  "name" : "Coalstone Clump",
+  "icon" : "coalstone:coalstone_clump",
+  "category" : "coalstone:items",
+  "sortnum" : 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A basic blend of $(item)Coal$() and $(l:condenser/cobblestone)Cobblestone$(/l) which is used to create $(l:items/coalstone_shard)Coalstone Shards$(/l)."
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_clump0",
+      "recipe2": "coalstone:coalstone_clump1"
+    },
+    {
+      "type": "image",
+      "title": "Coalstone Clump",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/coalstone_clump.png",
+        "coalstone:textures/guidebook/condenser_recipes/coalstone_clump2.png"
+      ]
+    }
+  ]
+}

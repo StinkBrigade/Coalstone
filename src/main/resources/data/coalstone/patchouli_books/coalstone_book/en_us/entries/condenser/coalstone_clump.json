@@ -1,0 +1,27 @@
+{
+  "name" : "Condensing: Coalstone Clump",
+  "icon" : "coalstone:coalstone_clump",
+  "category" : "coalstone:condenser",
+  "sortnum" : 0,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Coalstone Clump",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/coalstone_clump.png",
+        "coalstone:textures/guidebook/condenser_recipes/coalstone_clump2.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "2x $(item)Cobblestone$(), 2x $(item)Coal$()"
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "coalstone:items/coalstone_clump"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+	"type" : "minecraft:crafting_shapeless",
+	"ingredients" :
+	[
+		{
+			"item" : "minecraft:book"
+		},
+		{
+			"item" : "coalstone:coalstone_clump"
+		}
+	],
+	"result" :
+	{
+		"item": "patchouli:guide_book",
+		"count" : 1,
+		"nbt": {
+			"patchouli:book": "coalstone:coalstone_book"
+		}
+	}
+}

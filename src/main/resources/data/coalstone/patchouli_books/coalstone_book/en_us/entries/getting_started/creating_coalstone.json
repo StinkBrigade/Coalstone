@@ -1,0 +1,19 @@
+{
+  "name" : "Creating Coalstone",
+  "icon" : "coalstone:coalstone_clump",
+  "category" : "coalstone:getting_started",
+  "sortnum" : 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Your first step will be to create $(l:items/coalstone_clump)Coalstone Clumps$(/l), and then smelt them into $(l:items/coalstone_shard)Coalstone Shards$(/l): these are the basis for the rest of the mod's content."
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "coalstone:items/coalstone_clump",
+        "coalstone:items/coalstone_shard"
+      ]
+    }
+  ]
+}

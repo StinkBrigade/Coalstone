@@ -1,0 +1,20 @@
+{
+  "name" : "Condensing: Gravel",
+  "icon" : "minecraft:gravel",
+  "category" : "coalstone:condenser",
+  "sortnum" : 1,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Gravel",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/gravel.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "4x $(item)Sand$() or 4x $(item)Red Sand$()"
+    }
+  ]
+}

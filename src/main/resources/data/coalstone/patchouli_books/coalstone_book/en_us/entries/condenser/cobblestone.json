@@ -1,0 +1,20 @@
+{
+  "name" : "Condensing: Cobblestone",
+  "icon" : "minecraft:cobblestone",
+  "category" : "coalstone:condenser",
+  "sortnum" : 2,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Cobblestone",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/cobblestone.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "4x $(l:condenser/gravel)Gravel$(/l)"
+    }
+  ]
+}

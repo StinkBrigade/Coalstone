@@ -1,0 +1,16 @@
+{
+  "name" : "Coalstone Condenser",
+  "icon" : "coalstone:coalstone_condenser",
+  "category" : "coalstone:blocks",
+  "sortnum" : 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A unique processing block that processes materials in a 3x3 cross-pattern. These recipes take variable amounts of time and the Coalstone Condenser must remain fueled, like a Furnace."
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_condenser"
+    }
+  ]
+}

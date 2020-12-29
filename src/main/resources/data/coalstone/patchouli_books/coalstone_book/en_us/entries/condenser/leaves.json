@@ -1,0 +1,25 @@
+{
+  "name" : "Condensing: Leaves",
+  "icon" : "minecraft:oak_leaves",
+  "category" : "coalstone:condenser",
+  "sortnum" : 4,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Leaves",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/oak_leaves.png",
+        "coalstone:textures/guidebook/condenser_recipes/spruce_leaves.png",
+        "coalstone:textures/guidebook/condenser_recipes/birch_leaves.png",
+        "coalstone:textures/guidebook/condenser_recipes/jungle_leaves.png",
+        "coalstone:textures/guidebook/condenser_recipes/dark_oak_leaves.png",
+        "coalstone:textures/guidebook/condenser_recipes/acacia_leaves.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "5x $(item)Sapling$()"
+    }
+  ]
+}

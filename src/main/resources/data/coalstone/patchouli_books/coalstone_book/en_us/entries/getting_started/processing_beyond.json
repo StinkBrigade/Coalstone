@@ -1,0 +1,21 @@
+{
+  "name" : "Processing Beyond",
+  "icon" : "coalstone:coalstone_condenser",
+  "category" : "coalstone:getting_started",
+  "sortnum" : 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l:blocks/coalstone_condenser)Coalstone Condenser$(/l) is a powerful advanced tool in processing materials that allows for the creation of some typically rare items, even including Diamonds.$(br2)The Condenser requires a $(l:blocks/coalstone_furnace)Coalstone Furnace$(/l) to create, and cannot be made until you have some $(item)Iron Ingots$() and $(item)Lava$() in your possession."
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "coalstone:blocks/coalstone_condenser",
+        "coalstone:blocks/coalstone_bricks",
+        "coalstone:blocks/coalstone_tiles",
+        "coalstone:blocks/coalstone_furnace"
+      ]
+    }
+  ]
+}

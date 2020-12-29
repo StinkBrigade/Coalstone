@@ -1,0 +1,20 @@
+{
+  "name" : "Condensing: Ice",
+  "icon" : "minecraft:ice",
+  "category" : "coalstone:condenser",
+  "sortnum" : 5,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Ice",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/ice.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "4x $(item)Ice$(), 1x $(item)Water Bucket$()"
+    }
+  ]
+}

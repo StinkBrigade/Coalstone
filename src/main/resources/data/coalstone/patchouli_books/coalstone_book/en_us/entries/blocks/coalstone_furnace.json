@@ -1,0 +1,17 @@
+{
+  "name" : "Coalstone Furnace",
+  "icon" : "coalstone:coalstone_furnace",
+  "category" : "coalstone:blocks",
+  "sortnum" : 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A powerful upgraded Furnace with 1.25x fuel efficiency and 1.2x faster smelting speed."
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_furnace0",
+      "recipe2": "coalstone:coalstone_furnace1"
+    }
+  ]
+}

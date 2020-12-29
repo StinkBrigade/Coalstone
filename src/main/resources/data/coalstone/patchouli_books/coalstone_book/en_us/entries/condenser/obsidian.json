@@ -1,0 +1,21 @@
+{
+  "name" : "Condensing: Obsidian",
+  "icon" : "minecraft:obsidian",
+  "category" : "coalstone:condenser",
+  "sortnum" : 6,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Obsidian",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/obsidian.png",
+        "coalstone:textures/guidebook/condenser_recipes/obsidian2.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "2x $(item)Lava Bucket$(), 2x $(item)Water Bucket$()"
+    }
+  ]
+}

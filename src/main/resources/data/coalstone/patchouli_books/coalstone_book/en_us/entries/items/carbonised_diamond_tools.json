@@ -1,0 +1,47 @@
+{
+  "name" : "Carbonised Diamond Tools",
+  "icon" : "coalstone:carbonised_diamond_sword",
+  "category" : "coalstone:items",
+  "sortnum" : 4,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Carbonised Diamond tools are all created from $(l:items/condensed_coalstone)Condensed Coalstone$(/l) in a $(l:blocks/coalstone_condenser)Coalstone Condenser$(/l) and operate at a tier between Diamond and Netherite."
+    },
+    {
+      "type": "image",
+      "title": "Carb. Diamond Sword",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_sword.png"
+      ]
+    },
+    {
+      "type": "image",
+      "title": "Carb. Diamond Pickaxe",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_pickaxe.png"
+      ]
+    },
+    {
+      "type": "image",
+      "title": "Carb. Diamond Axe",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_axe.png"
+      ]
+    },
+    {
+      "type": "image",
+      "title": "Carb. Diamond Shovel",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_shovel.png"
+      ]
+    },
+    {
+      "type": "image",
+      "title": "Carb. Diamond Hoe",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_hoe.png"
+      ]
+    }
+  ]
+}

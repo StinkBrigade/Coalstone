@@ -1,0 +1,21 @@
+{
+  "name" : "Coalstone Tiles",
+  "icon" : "coalstone:coalstone_tiles",
+  "category" : "coalstone:blocks",
+  "sortnum" : 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A building material made from $(l:blocks/coalstone_bricks)Coalstone Bricks$(/l). The two are interchangeable in crafting and condensing recipes."
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_tiles",
+      "recipe2": "coalstone:coalstone_tile_slab"
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_tile_stairs"
+    }
+  ]
+}

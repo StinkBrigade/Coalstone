@@ -1,0 +1,16 @@
+{
+  "name" : "Coalstone Shard",
+  "icon" : "coalstone:coalstone_shard",
+  "category" : "coalstone:items",
+  "sortnum" : 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A simple material used in a variety of recipes."
+    },
+    {
+      "type": "smelting",
+      "recipe": "coalstone:coalstone_shard_from_smelting"
+    }
+  ]
+}

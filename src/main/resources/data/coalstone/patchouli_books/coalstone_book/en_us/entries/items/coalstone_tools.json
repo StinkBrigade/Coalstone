@@ -1,0 +1,26 @@
+{
+  "name" : "Coalstone Tools",
+  "icon" : "coalstone:coalstone_pickaxe",
+  "category" : "coalstone:items",
+  "sortnum" : 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Coalstone tools are all craftable using $(l:items/coalstone_shard)Coalstone Shards$(/l) and operate at a tier inbetween stone and iron."
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_sword",
+      "recipe2": "coalstone:coalstone_pickaxe"
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_axe",
+      "recipe2": "coalstone:coalstone_shovel"
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_hoe"
+    }
+  ]
+}

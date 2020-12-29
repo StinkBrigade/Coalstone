@@ -1,0 +1,30 @@
+{
+  "name" : "Condensing: Carb. Dia. Tools",
+  "icon" : "coalstone:carbonised_diamond_sword",
+  "category" : "coalstone:condenser",
+  "sortnum" : 9,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Carb. Diamond Tools",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_sword.png",
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_pickaxe.png",
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_axe.png",
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_shovel.png",
+        "coalstone:textures/guidebook/condenser_recipes/carbonised_diamond_hoe.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "3x $(l:items/condensed_coalstone)Condensed Coalstone$(/l), 1x $(item)Iron Ingot$(), 1x $(item)Diamond Tool$()"
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "coalstone:items/carbonised_diamond_tools"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name" : "Condensing: Diamond",
+  "icon" : "minecraft:diamond",
+  "category" : "coalstone:condenser",
+  "sortnum" : 8,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Diamond",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/diamond.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "4x $(l:items/condensed_coalstone)Condensed Coalstone$(/l), 1x $(item)Lava Bucket$()"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name" : "Condensed Coalstone",
+  "icon" : "coalstone:condensed_coalstone",
+  "category" : "coalstone:items",
+  "sortnum" : 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Condensed Coalstone is made from 5 $(l:blocks/coalstone_bricks)Coalstone Bricks$(/l) / $(l:blocks/coalstone_tiles)Tiles$(/l) and is used in creating powerful tools and materials."
+    },
+    {
+      "type": "image",
+      "title": "Condensed Coalstone",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/condensed_coalstone.png"
+      ]
+    }
+  ]
+}

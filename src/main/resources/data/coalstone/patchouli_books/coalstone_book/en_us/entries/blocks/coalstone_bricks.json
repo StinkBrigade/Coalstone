@@ -1,0 +1,21 @@
+{
+  "name" : "Coalstone Bricks",
+  "icon" : "coalstone:coalstone_bricks",
+  "category" : "coalstone:blocks",
+  "sortnum" : 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "A building material made out of $(l:items/coalstone_shard)Coalstone Shards$(/l), which can be used to make decoration blocks, materials, and processing blocks."
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_bricks",
+      "recipe2": "coalstone:coalstone_brick_slab"
+    },
+    {
+      "type": "crafting",
+      "recipe": "coalstone:coalstone_brick_stairs"
+    }
+  ]
+}

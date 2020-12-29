@@ -1,0 +1,26 @@
+{
+  "name" : "Condensing: Cond. Coalstone",
+  "icon" : "coalstone:condensed_coalstone",
+  "category" : "coalstone:condenser",
+  "sortnum" : 7,
+  "pages": [
+    {
+      "type": "image",
+      "title": "Condensed Coalstone",
+      "images": [
+        "coalstone:textures/guidebook/condenser_recipes/condensed_coalstone.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Materials",
+      "text": "5x $(l:blocks/coalstone_bricks)Coalstone Bricks$(/l) or 5x $(l:blocks/coalstone_tiles)Coalstone Tiles$(/l)"
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "coalstone:items/condensed_coalstone"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name" : "Advanced Smelting",
+  "icon" : "coalstone:coalstone_furnace",
+  "category" : "coalstone:getting_started",
+  "sortnum" : 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Creating a $(l:blocks/coalstone_furnace)Coalstone Furnace$(/l) will allow you to increase your total smelting efficiency by about 1.5x.$(br2)The Coalstone Furnace can be made with $(l:blocks/coalstone_bricks)Coalstone Bricks$(/l) or $(l:blocks/coalstone_tiles)Tiles$(/l) interchangeably and has two recipes - one from scratch, and one that includes a regular Furnace."
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "coalstone:blocks/coalstone_furnace",
+        "coalstone:blocks/coalstone_bricks",
+        "coalstone:blocks/coalstone_tiles"
+      ]
+    }
+  ]
+}
