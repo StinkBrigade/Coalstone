@@ -25,3 +25,15 @@ Coalstone can be used to create decoration blocks, tools, and improved methods o
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.4,1.17)"
+
+[[dependencies.coalstone]]
+    modId="patchouli"
+    mandatory=false
+    versionRange="[1.16.4-48,)"
+
+[[dependencies.coalstone]]
+    modId="jei"
+    mandatory=false
+    versionRange="[7.6.0.58,)"
+
+

@@ -1,8 +1,7 @@
 buildscript {
     repositories {
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        jcenter()
         mavenCentral()
+        maven { url = 'https://files.minecraftforge.net/maven' }
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
@@ -43,6 +42,8 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
+            properties 'mixin.env.disableRefMap': 'true'
+
             mods {
                 coalstone {
                     source sourceSets.main
@@ -58,6 +59,8 @@ minecraft {
 
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
+
+            properties 'mixin.env.disableRefMap': 'true'
 
             mods {
                 coalstone {
@@ -75,6 +78,8 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
+            properties 'mixin.env.disableRefMap': 'true'
+
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', 'coalstone', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
@@ -91,10 +96,16 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-        maven {
-        	name = "Progwm16 maven"
-        	url = "https://dvs1.progwm16.com/files/maven/"
-        }
+    maven {
+        url "http://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        name "ModMaven"
+        url "https://modmaven.k-4u.nl"
+    }
+    maven {
+        url 'https://maven.blamejared.com'
+    }
 }
 
 dependencies {
@@ -105,6 +116,9 @@ dependencies {
 
 	compileOnly fg.deobf("mezz.jei:jei-1.16.4:7.6.0.58:api")
 	runtimeOnly fg.deobf("mezz.jei:jei-1.16.4:7.6.0.58")
+
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-48:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-48")
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
