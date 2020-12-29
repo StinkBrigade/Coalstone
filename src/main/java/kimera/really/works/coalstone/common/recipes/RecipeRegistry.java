@@ -28,10 +28,7 @@ public class RecipeRegistry
 	public static final Map<ResourceLocation, IRecipe<?>> getRecipes(IRecipeType<?> recipeType, RecipeManager recipeManager)
 	{
 		final Map<IRecipeType<?>, Map<ResourceLocation, IRecipe<?>>> recipesMap = ObfuscationReflectionHelper.getPrivateValue(RecipeManager.class, recipeManager, "recipes");
-		final Map<IRecipeType<?>, Map<ResourceLocation, IRecipe<?>>> recipesMap2 = ObfuscationReflectionHelper.getPrivateValue(RecipeManager.class, recipeManager, "field_199522_d");
-		
-		Coalstone.LOGGER.log(Level.DEBUG, "Recipes Map 1: " + (recipesMap.size()));
-		Coalstone.LOGGER.log(Level.DEBUG, "Recipes Map 2: " + (recipesMap2.size()));
+
 		return recipesMap.get(recipeType);
 	}
 }

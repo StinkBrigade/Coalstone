@@ -26,5 +26,7 @@
 	"block.coalstone.coalstone_condenser" : "Coalstone Condenser",
 	
 	"container.coalstone.coalstone_furnace" : "Coalstone Furnace",
-	"container.coalstone.coalstone_condenser" : "Coalstone Condenser"
+	"container.coalstone.coalstone_condenser" : "Coalstone Condenser",
+
+	"jei.coalstone.coalstone_condenser" : "Coalstone Condenser"
 }
