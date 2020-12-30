@@ -22,7 +22,7 @@ public class ItemRegistry
 	public static final RegistryObject<Item> coalstoneClump = ITEMS.register("coalstone_clump", () -> new Item(new Properties().group(ItemGroup.MATERIALS)));
 	public static final RegistryObject<Item> coalstoneShard = ITEMS.register("coalstone_shard", () -> new Item(new Properties().group(ItemGroup.MATERIALS)));
 	public static final RegistryObject<Item> condensedCoalstone = ITEMS.register("condensed_coalstone", () -> new Item(new Properties().group(ItemGroup.MATERIALS)));
-	
+
 	public static final RegistryObject<Item> coalstoneSword = ITEMS.register("coalstone_sword", () -> new SwordItem(CoalstoneItemTiers.COALSTONE, 3, -2.4F, new Item.Properties().group(ItemGroup.COMBAT)));
 	public static final RegistryObject<Item> coalstoneShovel = ITEMS.register("coalstone_shovel", () -> new ShovelItem(CoalstoneItemTiers.COALSTONE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroup.TOOLS)));
 	public static final RegistryObject<Item> coalstonePickaxe = ITEMS.register("coalstone_pickaxe", () -> new PickaxeItem(CoalstoneItemTiers.COALSTONE, 1, -2.8F, (new Item.Properties()).group(ItemGroup.TOOLS)));

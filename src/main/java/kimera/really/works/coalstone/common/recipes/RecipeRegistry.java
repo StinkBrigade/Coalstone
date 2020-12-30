@@ -27,7 +27,7 @@ public class RecipeRegistry
 	
 	public static final Map<ResourceLocation, IRecipe<?>> getRecipes(IRecipeType<?> recipeType, RecipeManager recipeManager)
 	{
-		final Map<IRecipeType<?>, Map<ResourceLocation, IRecipe<?>>> recipesMap = ObfuscationReflectionHelper.getPrivateValue(RecipeManager.class, recipeManager, "recipes");
+		final Map<IRecipeType<?>, Map<ResourceLocation, IRecipe<?>>> recipesMap = ObfuscationReflectionHelper.getPrivateValue(RecipeManager.class, recipeManager, "field_199522_d");
 
 		return recipesMap.get(recipeType);
 	}

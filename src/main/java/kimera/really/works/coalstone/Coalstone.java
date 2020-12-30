@@ -40,8 +40,6 @@ public class Coalstone
 
         MinecraftForge.EVENT_BUS.register(new CoalstoneEventHandler());
         
-        // TODO: Condenser recipes reset when changing item stack sizes
-        // TODO: Fix weird bug where literally no class files generate even during runClient. What the actual fuck
-		// TODO: Condenser recipes will still try to complete even if the output slot has an invalid item
+        // TODO: Fix weird bug where class files don't properly generate when building. This can be mitigated by just copying /bin/ .CLASSes to /src/
     }
 }
