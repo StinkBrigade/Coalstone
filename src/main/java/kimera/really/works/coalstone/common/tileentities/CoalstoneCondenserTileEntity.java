@@ -323,6 +323,11 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 		{
 			return false;
 		}
+		ItemStack outputSlotStack = this.items.get(FIRST_OUTPUT_SLOT_INDEX); 
+		if(!outputSlotStack.isEmpty() && recipeOutputStack.getItem() != outputSlotStack.getItem())
+		{
+			return false;
+		}
 		
 		// Is there at least one input item?
 		int filledInputs = 0;
@@ -427,7 +432,7 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 	public void setInventorySlotContents(int index, ItemStack stack)
 	{
 		ItemStack itemStack = this.getStackInSlot(index);
-		boolean maintainProcessingTime = !itemStack.isEmpty() && itemStack.equals(stack) && ItemStack.areItemStackTagsEqual(stack, itemStack);
+		boolean maintainProcessingTime = !itemStack.isEmpty() && itemStack.getItem() == stack.getItem() && ItemStack.areItemStackTagsEqual(stack, itemStack);
 		
 		this.items.set(index, stack);
 		if(stack.getCount() > this.getInventoryStackLimit())
