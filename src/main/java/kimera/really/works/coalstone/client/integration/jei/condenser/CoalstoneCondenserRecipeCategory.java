@@ -1,10 +1,11 @@
-package kimera.really.works.coalstone.client.integration.jei.categories;
+package kimera.really.works.coalstone.client.integration.jei.condenser;
+
+import java.awt.Color;
+import java.text.NumberFormat;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
-import com.mojang.blaze3d.systems.RenderSystem;
+
 import kimera.really.works.coalstone.Coalstone;
-import kimera.really.works.coalstone.client.gui.screen.inventory.CoalstoneCondenserScreen;
-import kimera.really.works.coalstone.common.inventory.container.CoalstoneCondenserContainer;
 import kimera.really.works.coalstone.common.items.ItemRegistry;
 import kimera.really.works.coalstone.common.recipes.CoalstoneCondenserRecipe;
 import kimera.really.works.coalstone.common.tileentities.CoalstoneCondenserTileEntity;
@@ -15,12 +16,12 @@ import mezz.jei.api.gui.ingredient.IGuiItemStackGroup;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.category.IRecipeCategory;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.util.Size2i;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 
 public class CoalstoneCondenserRecipeCategory implements IRecipeCategory<CoalstoneCondenserRecipe>
 {
@@ -28,25 +29,18 @@ public class CoalstoneCondenserRecipeCategory implements IRecipeCategory<Coalsto
 
     private final IDrawable background;
     private final String localizedName;
-    private final IDrawable overlay;
     private final IDrawable icon;
 
-    private static final int[][] CONDENSER_SLOTS_XPOS =
-    {
-            { 104 },
-            { 26, 8, 26, 44, 26 }
-    };
-    private static final int[][] CONDENSER_SLOTS_YPOS =
-    {
-            { 35 },
-            { 17, 35, 35, 35, 53 }
-    };
+    private static final int[] CONDENSER_SLOTS_XPOS = { 103, 25, 7, 25, 43, 25 };
+    private static final int[] CONDENSER_SLOTS_YPOS = { 25, 7, 25, 25, 25, 43 };
+    
+    private static final int COOK_TIME_XPOS = 7;
+    private static final int COOK_TIME_YPOS = 67;
 
     public CoalstoneCondenserRecipeCategory(IGuiHelper guiHelper)
     {
-        background = guiHelper.createBlankDrawable(132, 84);
+        background = guiHelper.createDrawable(new ResourceLocation(Coalstone.MODID, "textures/gui/condenser_jei.png"), 0, 0, 132, 84);
         localizedName = I18n.format("jei.coalstone.coalstone_condenser");
-        overlay = guiHelper.createDrawable(new ResourceLocation(Coalstone.MODID, "textures/gui/condenser.png"), 0, 0, 132, 84);
         icon = guiHelper.createDrawableIngredient(new ItemStack(ItemRegistry.coalstoneCondenser.get()));
     }
 
@@ -84,11 +78,21 @@ public class CoalstoneCondenserRecipeCategory implements IRecipeCategory<Coalsto
     @Override
     public void draw(CoalstoneCondenserRecipe recipe, MatrixStack matrixStack, double mouseX, double mouseY)
     {
-        RenderSystem.enableAlphaTest();
+        /*RenderSystem.enableAlphaTest();
         RenderSystem.enableBlend();
         overlay.draw(matrixStack, 0, 0);
         RenderSystem.disableBlend();
-        RenderSystem.disableAlphaTest();
+        RenderSystem.disableAlphaTest();*/
+    	Minecraft mc = Minecraft.getInstance();
+    	mc.fontRenderer.func_243248_b(matrixStack, getSmeltTimeText(recipe.getCookTime()), COOK_TIME_XPOS, COOK_TIME_YPOS, Color.gray.getRGB());
+    }
+    
+    private ITextComponent getSmeltTimeText(int cookTime)
+    {
+    	NumberFormat numberInstance = NumberFormat.getNumberInstance();
+    	numberInstance.setMaximumFractionDigits(2);
+    	String smeltTimeSeconds = numberInstance.format(cookTime / 200f);
+    	return new TranslationTextComponent("jei.coalstone.cookTime", smeltTimeSeconds);
     }
 
     @Override
@@ -101,12 +105,16 @@ public class CoalstoneCondenserRecipeCategory implements IRecipeCategory<Coalsto
     @Override
     public void setRecipe(IRecipeLayout recipeLayout, CoalstoneCondenserRecipe recipe, IIngredients iIngredients)
     {
+    	int currentSlot = 0;
+    	
         IGuiItemStackGroup guiItemStacks = recipeLayout.getItemStacks();
-        guiItemStacks.init(CoalstoneCondenserTileEntity.FIRST_OUTPUT_SLOT_INDEX, false, CONDENSER_SLOTS_XPOS[0][0], CONDENSER_SLOTS_YPOS[0][0]);
+        guiItemStacks.init(currentSlot, false, CONDENSER_SLOTS_XPOS[currentSlot], CONDENSER_SLOTS_YPOS[currentSlot]);
+        guiItemStacks.set(currentSlot, iIngredients.getOutputs(VanillaTypes.ITEM).get(0));
 
         for(int inputSlotIndex = 0; inputSlotIndex < CoalstoneCondenserTileEntity.INPUT_SLOT_COUNT; inputSlotIndex++)
         {
-            guiItemStacks.init(inputSlotIndex, true, CONDENSER_SLOTS_XPOS[1][inputSlotIndex], CONDENSER_SLOTS_YPOS[1][inputSlotIndex]);
+            guiItemStacks.init(++currentSlot, true, CONDENSER_SLOTS_XPOS[currentSlot], CONDENSER_SLOTS_YPOS[currentSlot]);
+            guiItemStacks.set(currentSlot, iIngredients.getInputs(VanillaTypes.ITEM).get(inputSlotIndex));
         }
     }
 }

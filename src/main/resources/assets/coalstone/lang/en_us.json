@@ -28,5 +28,6 @@
 	"container.coalstone.coalstone_furnace" : "Coalstone Furnace",
 	"container.coalstone.coalstone_condenser" : "Coalstone Condenser",
 
-	"jei.coalstone.coalstone_condenser" : "Coalstone Condenser"
+	"jei.coalstone.coalstone_condenser" : "Coalstone Condenser",
+	"jei.coalstone.cookTime" : "Takes %s seconds."
 }
