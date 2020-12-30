@@ -1,3 +1,3 @@
 Coalstone
 
-![Holy shit is that Orphaneer Dualscar](Stupid Meme.png)
+![Holy COALSTONE CLUMP is that Orphaneer Dualscar](/Stupid Meme.png)
