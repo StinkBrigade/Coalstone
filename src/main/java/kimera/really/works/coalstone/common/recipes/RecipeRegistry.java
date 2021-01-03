@@ -16,11 +16,11 @@ import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 
 public class RecipeRegistry
 {
-	public static final IRecipeType<CoalstoneCondenserRecipe> coalstoneCondenserRecipe = new CoalstoneCondenserRecipeType();
+	public static final IRecipeType<CoalstoneCondenserRecipe> COALSTONE_CONDENSER_RECIPE_TYPE = new CoalstoneCondenserRecipeType();
 	
 	public static void registerRecipeSerializers(Register<IRecipeSerializer<?>> event)
 	{
-		Registry.register(Registry.RECIPE_TYPE, new ResourceLocation(coalstoneCondenserRecipe.toString()), coalstoneCondenserRecipe);
+		Registry.register(Registry.RECIPE_TYPE, new ResourceLocation(COALSTONE_CONDENSER_RECIPE_TYPE.toString()), COALSTONE_CONDENSER_RECIPE_TYPE);
 	
 		event.getRegistry().register(CoalstoneCondenserRecipe.SERIALIZER);
 	}

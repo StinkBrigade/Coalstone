@@ -41,7 +41,7 @@ public class CoalstoneCondenserRecipeCategory implements IRecipeCategory<Coalsto
     {
         background = guiHelper.createDrawable(new ResourceLocation(Coalstone.MODID, "textures/gui/condenser_jei.png"), 0, 0, 132, 84);
         localizedName = I18n.format("jei.coalstone.coalstone_condenser");
-        icon = guiHelper.createDrawableIngredient(new ItemStack(ItemRegistry.coalstoneCondenser.get()));
+        icon = guiHelper.createDrawableIngredient(new ItemStack(ItemRegistry.COALSTONE_CONDENSER.get()));
     }
 
     @Override

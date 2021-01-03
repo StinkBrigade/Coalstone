@@ -44,12 +44,12 @@ public class CoalstonePluginJEI implements IModPlugin
     public void registerRecipes(@Nonnull IRecipeRegistration registry)
     {
         World world = Objects.requireNonNull(Minecraft.getInstance().world);
-        registry.addRecipes(RecipeRegistry.getRecipes(RecipeRegistry.coalstoneCondenserRecipe, world.getRecipeManager()).values(), CoalstoneCondenserRecipeCategory.UID);
+        registry.addRecipes(RecipeRegistry.getRecipes(RecipeRegistry.COALSTONE_CONDENSER_RECIPE_TYPE, world.getRecipeManager()).values(), CoalstoneCondenserRecipeCategory.UID);
     }
 
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registry)
     {
-        registry.addRecipeCatalyst(new ItemStack(BlockRegistry.coalstoneCondenser.get()), CoalstoneCondenserRecipeCategory.UID);
+        registry.addRecipeCatalyst(new ItemStack(BlockRegistry.COALSTONE_CONDENSER.get()), CoalstoneCondenserRecipeCategory.UID);
     }
 }

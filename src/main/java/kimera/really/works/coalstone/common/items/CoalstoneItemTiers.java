@@ -9,11 +9,11 @@ import net.minecraft.util.LazyValue;
 public enum CoalstoneItemTiers implements IItemTier {
 	COALSTONE(1, 210, 5.0F, 1.0F, 10, () ->
 	{
-		return Ingredient.fromItems(ItemRegistry.coalstoneShard.get());
+		return Ingredient.fromItems(ItemRegistry.COALSTONE_SHARD.get());
 	}),
 	CARBONISED_DIAMOND(3, 1951, 8.0F, 4.0F, 12, () ->
 	{
-		return Ingredient.fromItems(ItemRegistry.condensedCoalstone.get());
+		return Ingredient.fromItems(ItemRegistry.CONDENSED_COALSTONE.get());
 	});
 	
 	private final int harvestLevel;

@@ -129,13 +129,13 @@ public class CoalstoneCondenserRecipe implements IRecipe<IInventory>
 	@Override
 	public ItemStack getIcon()
 	{
-		return new ItemStack(BlockRegistry.coalstoneCondenser.get());
+		return new ItemStack(BlockRegistry.COALSTONE_CONDENSER.get());
 	}
 
 	@Override
 	public IRecipeType<?> getType()
 	{
-		return RecipeRegistry.coalstoneCondenserRecipe;
+		return RecipeRegistry.COALSTONE_CONDENSER_RECIPE_TYPE;
 	}
 
 	@Override

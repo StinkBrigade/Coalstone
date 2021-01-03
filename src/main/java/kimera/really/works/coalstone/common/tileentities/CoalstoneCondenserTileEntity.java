@@ -220,7 +220,7 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 		// If the condenser is currently burning fuel, or if it has an item in a fuel / input slot
 		if(this.isBurning() || !isSlotRangeEmpty(FIRST_FUEL_SLOT_INDEX, FIRST_OUTPUT_SLOT_INDEX))
 		{
-			IRecipe<?> recipe = this.world.getRecipeManager().getRecipe(RecipeRegistry.coalstoneCondenserRecipe, this, this.world).orElse(null);
+			IRecipe<?> recipe = this.world.getRecipeManager().getRecipe(RecipeRegistry.COALSTONE_CONDENSER_RECIPE_TYPE, this, this.world).orElse(null);
 			boolean canCondense = this.canCondense(recipe);
 			
 			if(!this.isBurning() && canCondense)
@@ -272,7 +272,7 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 	
 	private int getRecipeCookTime()
 	{
-		return this.world.getRecipeManager().getRecipe(RecipeRegistry.coalstoneCondenserRecipe, this, this.world).map(CoalstoneCondenserRecipe::getCookTime).orElse(200);
+		return this.world.getRecipeManager().getRecipe(RecipeRegistry.COALSTONE_CONDENSER_RECIPE_TYPE, this, this.world).map(CoalstoneCondenserRecipe::getCookTime).orElse(200);
 	}
 	
 	private void addOutput(ItemStack output)
