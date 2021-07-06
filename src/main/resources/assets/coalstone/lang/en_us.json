@@ -24,10 +24,13 @@
 	
 	"block.coalstone.coalstone_furnace" : "Coalstone Furnace",
 	"block.coalstone.coalstone_condenser" : "Coalstone Condenser",
+	"block.coalstone.coalstone_obliterator" : "Coalstone Obliterator",
 	
 	"container.coalstone.coalstone_furnace" : "Coalstone Furnace",
 	"container.coalstone.coalstone_condenser" : "Coalstone Condenser",
+	"container.coalstone.coalstone_obliterator" : "Coalstone Obliterator",
 
 	"jei.coalstone.coalstone_condenser" : "Coalstone Condenser",
+	"jei.coalstone.coalstone_obliterator" : "Coalstone Obliterator",
 	"jei.coalstone.cookTime" : "Takes %s seconds."
 }

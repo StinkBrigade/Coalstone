@@ -43,4 +43,5 @@ public class ItemRegistry
 	public static final RegistryObject<Item> COALSTONE_TILE_SLAB = ITEMS.register("coalstone_tile_slab", () -> new BlockItem(BlockRegistry.COALSTONE_TILE_SLAB.get(), (new Item.Properties()).group(ItemGroup.BUILDING_BLOCKS)));
 	public static final RegistryObject<Item> COALSTONE_FURNACE = ITEMS.register("coalstone_furnace", () -> new BlockItem(BlockRegistry.COALSTONE_FURNACE.get(), (new Item.Properties()).group(ItemGroup.DECORATIONS)));
 	public static final RegistryObject<Item> COALSTONE_CONDENSER = ITEMS.register("coalstone_condenser", () -> new BlockItem(BlockRegistry.COALSTONE_CONDENSER.get(), (new Item.Properties()).group(ItemGroup.DECORATIONS)));
+	public static final RegistryObject<Item> COALSTONE_OBLITERATOR = ITEMS.register("coalstone_obliterator", () -> new BlockItem(BlockRegistry.COALSTONE_OBLITERATOR.get(), (new Item.Properties()).group(ItemGroup.DECORATIONS)));
 }
