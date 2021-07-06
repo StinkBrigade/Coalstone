@@ -42,7 +42,7 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 	public static final int FIRST_INPUT_SLOT_INDEX = FIRST_FUEL_SLOT_INDEX + FUEL_SLOT_COUNT;
 	public static final int FIRST_OUTPUT_SLOT_INDEX = FIRST_INPUT_SLOT_INDEX + INPUT_SLOT_COUNT;
 
-	// SLOTS_UP: Slots 1 - 5 (all 5 input slots)
+	// SLOTS_UP: Slot 0 (fuel)
 	// SLOTS_DOWN: Slots 6 & 0 (reverse order, prioritise extracting output)
 	// SLOTS_HORIZONTAL: Input slots (1 - 5) first prioritising side, then slot centre, then rest from 1 - 5
 	//                   Front, Left, Back, Right (DEFAULT: South, West, North, East)
