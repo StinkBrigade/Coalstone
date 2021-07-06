@@ -27,12 +27,9 @@ public class BlockRegistry
 	
 	public static final RegistryObject<Block> COALSTONE_FURNACE = BLOCKS.register("coalstone_furnace", () -> new CoalstoneFurnaceBlock(Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(1.5F, 6.0F).setLightLevel(getLightValueLit(13))));
 	public static final RegistryObject<Block> COALSTONE_CONDENSER = BLOCKS.register("coalstone_condenser", () -> new CoalstoneCondenserBlock(Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(1.5F, 6.0F).setLightLevel(getLightValueLit(13))));
-	
+
 	private static ToIntFunction<BlockState> getLightValueLit(int lightValue)
 	{
-		return (state) ->
-	    {
-	    	return state.get(BlockStateProperties.LIT) ? lightValue : 0;
-	    };
+		return (state) -> state.get(BlockStateProperties.LIT) ? lightValue : 0;
 	}
 }

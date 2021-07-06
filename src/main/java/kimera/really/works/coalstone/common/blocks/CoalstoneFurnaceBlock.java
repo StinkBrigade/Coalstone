@@ -43,7 +43,8 @@ public class CoalstoneFurnaceBlock extends AbstractFurnaceBlock
 	        player.addStat(Stats.INTERACT_WITH_FURNACE);
 		}
 	}
-	
+
+	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand)
 	{
