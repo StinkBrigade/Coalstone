@@ -147,7 +147,7 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 	{
 		CompoundNBT nbtTagCompound = new CompoundNBT();
 		write(nbtTagCompound);
-		return new SUpdateTileEntityPacket(this.pos, 513, nbtTagCompound);
+		return new SUpdateTileEntityPacket(this.pos, getTileEntityId(), nbtTagCompound);
 	}
 	
 	@Override
@@ -245,6 +245,8 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 
 					this.consumeIngredients();
 					this.addOutput(condenserRecipe.getCraftingResult(this));
+
+					//TODO: Add stat for finishing a Condenser recipe
 				}
 			}
 			else
@@ -331,9 +333,9 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 		
 		// Is there at least one input item?
 		int filledInputs = 0;
-		for(int inputIndex = FIRST_INPUT_SLOT_INDEX; inputIndex < INPUT_SLOT_COUNT; inputIndex++)
+		for(int inputIndex = 0; inputIndex < INPUT_SLOT_COUNT; inputIndex++)
 		{
-			ItemStack inputStack = this.items.get(inputIndex);
+			ItemStack inputStack = this.items.get(FIRST_INPUT_SLOT_INDEX + inputIndex);
 			if(!inputStack.isEmpty())
 			{
 				filledInputs++;
@@ -346,9 +348,9 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 		
 		// 
 		int validOutputs = OUTPUT_SLOT_COUNT;
-		for(int outputIndex = FIRST_OUTPUT_SLOT_INDEX; outputIndex < OUTPUT_SLOT_COUNT; outputIndex++)
+		for(int outputIndex = 0; outputIndex < OUTPUT_SLOT_COUNT; outputIndex++)
 		{
-			if(this.isSlotTaken(outputIndex, recipeOutputStack) < 1)
+			if(this.isSlotTaken(FIRST_OUTPUT_SLOT_INDEX + outputIndex, recipeOutputStack) < 1)
 			{
 				validOutputs--;
 			}
@@ -552,5 +554,10 @@ public class CoalstoneCondenserTileEntity extends LockableTileEntity implements 
 	public static boolean isFuel(ItemStack stack)
 	{
 		return ForgeHooks.getBurnTime(stack) > 0;
+	}
+
+	public int getTileEntityId()
+	{
+		return 513;
 	}
 }

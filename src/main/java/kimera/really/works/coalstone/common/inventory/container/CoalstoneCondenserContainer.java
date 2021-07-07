@@ -151,13 +151,13 @@ public class CoalstoneCondenserContainer extends Container
 		
 		for(int condenserInputSlotIndex = 0; condenserInputSlotIndex < CONDENSER_INPUT_SLOT_COUNT; condenserInputSlotIndex++)
 		{
-			int slotNumber = CONDENSER_FUEL_SLOT_COUNT + condenserInputSlotIndex;
+			int slotNumber = CONDENSER_FIRST_INPUT_SLOT_INDEX - PLAYER_SLOT_COUNT + condenserInputSlotIndex;
 			addSlot(new MachineInputSlot(condenserInventory, slotNumber, CONDENSER_SLOTS_XPOS[1][condenserInputSlotIndex], CONDENSER_SLOTS_YPOS[1][condenserInputSlotIndex]));
 		}
 		
 		for(int condenserOutputSlotIndex = 0; condenserOutputSlotIndex < CONDENSER_OUTPUT_SLOT_COUNT; condenserOutputSlotIndex++)
 		{
-			int slotNumber = CONDENSER_FUEL_SLOT_COUNT + CONDENSER_INPUT_SLOT_COUNT + condenserOutputSlotIndex;
+			int slotNumber = CONDENSER_FIRST_OUTPUT_SLOT_INDEX - PLAYER_SLOT_COUNT + condenserOutputSlotIndex;
 			addSlot(new MachineOutputSlot(condenserInventory, slotNumber, CONDENSER_SLOTS_XPOS[2][condenserOutputSlotIndex], CONDENSER_SLOTS_YPOS[2][condenserOutputSlotIndex]));
 		}
 		
