@@ -15,9 +15,14 @@ public class ContainerRegistry
 	{
 		return new CoalstoneFurnaceContainer(windowId, inv);
 	}));
-	
+
 	public static final RegistryObject<ContainerType<CoalstoneCondenserContainer>> COALSTONE_CONDENSER = CONTAINERS.register("coalstone_condenser", () -> IForgeContainerType.create((windowId, inv, data) ->
 	{
 		return CoalstoneCondenserContainer.createContainerClientSide(windowId, inv, data);
+	}));
+
+	public static final RegistryObject<ContainerType<CoalstoneObliteratorContainer>> COALSTONE_OBLITERATOR = CONTAINERS.register("coalstone_obliterator", () -> IForgeContainerType.create((windowId, inv, data) ->
+	{
+		return CoalstoneObliteratorContainer.createContainerClientSide(windowId, inv, data);
 	}));
 }

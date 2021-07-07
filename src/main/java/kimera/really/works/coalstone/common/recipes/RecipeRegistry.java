@@ -17,12 +17,15 @@ import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 public class RecipeRegistry
 {
 	public static final IRecipeType<CoalstoneCondenserRecipe> COALSTONE_CONDENSER_RECIPE_TYPE = new CoalstoneCondenserRecipeType();
+	public static final IRecipeType<CoalstoneObliteratorRecipe> COALSTONE_OBLITERATOR_RECIPE_TYPE = new CoalstoneObliteratorRecipeType();
 	
 	public static void registerRecipeSerializers(Register<IRecipeSerializer<?>> event)
 	{
 		Registry.register(Registry.RECIPE_TYPE, new ResourceLocation(COALSTONE_CONDENSER_RECIPE_TYPE.toString()), COALSTONE_CONDENSER_RECIPE_TYPE);
-	
+		Registry.register(Registry.RECIPE_TYPE, new ResourceLocation(COALSTONE_OBLITERATOR_RECIPE_TYPE.toString()), COALSTONE_OBLITERATOR_RECIPE_TYPE);
+
 		event.getRegistry().register(CoalstoneCondenserRecipe.SERIALIZER);
+		event.getRegistry().register(CoalstoneObliteratorRecipe.SERIALIZER);
 	}
 	
 	public static final Map<ResourceLocation, IRecipe<?>> getRecipes(IRecipeType<?> recipeType, RecipeManager recipeManager)

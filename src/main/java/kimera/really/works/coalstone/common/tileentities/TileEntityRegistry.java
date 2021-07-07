@@ -13,4 +13,5 @@ public class TileEntityRegistry
 	
 	public static final RegistryObject<TileEntityType<CoalstoneFurnaceTileEntity>> COALSTONE_FURNACE = TILE_ENTITIES.register("coalstone_furnace", () -> TileEntityType.Builder.create(CoalstoneFurnaceTileEntity::new, BlockRegistry.COALSTONE_FURNACE.get()).build(null));
 	public static final RegistryObject<TileEntityType<CoalstoneCondenserTileEntity>> COALSTONE_CONDENSER = TILE_ENTITIES.register("coalstone_condenser", () -> TileEntityType.Builder.create(CoalstoneCondenserTileEntity::new, BlockRegistry.COALSTONE_CONDENSER.get()).build(null));
+	public static final RegistryObject<TileEntityType<CoalstoneObliteratorTileEntity>> COALSTONE_OBLITERATOR = TILE_ENTITIES.register("coalstone_obliterator", () -> TileEntityType.Builder.create(CoalstoneObliteratorTileEntity::new, BlockRegistry.COALSTONE_CONDENSER.get()).build(null));
 }
