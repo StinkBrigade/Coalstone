@@ -39,7 +39,5 @@ public class Coalstone
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientSetup::init);
 
         MinecraftForge.EVENT_BUS.register(new CoalstoneEventHandler());
-        
-        // TODO: Fix weird bug where class files don't properly generate when building. This can be mitigated by just copying /bin/ .CLASSes to /src/
     }
 }
