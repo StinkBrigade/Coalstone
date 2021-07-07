@@ -67,7 +67,7 @@ public class CoalstoneCondenserBlock extends Block
 			if(tileEntity instanceof CoalstoneCondenserTileEntity)
 			{
 				player.openContainer((INamedContainerProvider)tileEntity);
-				// Add stat for interacting with Condenser?
+				//TODO: Add stat for interacting with Condenser
 			}
 			
 			return ActionResultType.CONSUME;
@@ -100,18 +100,6 @@ public class CoalstoneCondenserBlock extends Block
 			}
 			super.onReplaced(state, worldIn, pos, newState, isMoving);
 		}
-	}
-
-	@Override
-	public boolean hasComparatorInputOverride(BlockState state)
-	{
-		return true;
-	}
-
-	@Override
-	public int getComparatorInputOverride(BlockState blockState, World worldIn, BlockPos pos) 
-	{
-		return Container.calcRedstone(worldIn.getTileEntity(pos));
 	}
 
 	@Override
